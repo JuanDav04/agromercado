@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroMercado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700&display.swap"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="app-wrapper">
+
+  <!-- Barra lateral -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-icon">🌾</div>
+      <div>
+        <div class="sidebar-logo-title">AgroMercado</div>
+        <div class="sidebar-logo-sub">Del campo a tu mesa</div>
+      </div>
+    </div>
+    <nav id="sidebar-nav"></nav>
+    <div class="sidebar-promo">
+      <h4>¡Sé productor!</h4>
+      <p>Publica y vende directo al consumidor</p>
+      <button class="btn-sm-green">Registrarme 👨‍🌾</button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content" id="main-content"></main>
+
+  <!-- Carrito -->
+  <aside class="cart-panel">
+    <div class="cart-balance-card">
+      <div class="cart-balance-label">SALDO DISPONIBLE</div>
+      <div class="cart-balance-amount">$45.000</div>
+      <div class="cart-balance-actions">
+        <button class="cart-balance-btn">Recargar 💳</button>
+        <button class="cart-balance-btn">Transferir 🔄</button>
+      </div>
+    </div>
+    <div class="cart-title">🛒 Tu pedido</div>
+    <div id="cart-items"></div>
+    <div id="cart-summary"></div>
+  </aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
